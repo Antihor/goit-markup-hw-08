@@ -209,9 +209,14 @@
 }
 
 .form-footer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    @media screen and(min-width:1200px) {
     display: flex;
     align-items: flex-end;
-}
+    }
+  }
 
 .form-footer-title {
     font-weight: 700;
@@ -223,8 +228,11 @@
 }
 
 .form-footer-label {
-    display: block;
-    margin-right: 12px;
+   text-align: center;
+   @media screen and(min-width:1200px) {
+        margin-right: 12px;
+    }
+    
 }
 
 .form-footer input {
@@ -234,6 +242,7 @@
     border-radius: 4px;
     padding-left: 16px;
     margin-top: 20px;
+    margin-bottom: 20px;
     background-color: inherit;
 }
 

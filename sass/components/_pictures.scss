@@ -1,6 +1,9 @@
 .pictures {
+    @media screen and (max-width:1199px) {
+        display: none;
+    }
     display: flex;
-}
+
 .pictures__label {
     position: absolute;
     left: 0;
@@ -25,3 +28,9 @@
 &__item:not(:last-child) {
     margin-right: 30px;
 }}
+}
+.section--pics {
+    @media screen and(max-width:1199px) {
+        display: none;
+    }
+}

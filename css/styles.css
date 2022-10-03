@@ -208,9 +208,9 @@ p {
 .benefits__item {
   width: 270px;
 }
-.benefits__item:not(:last-child) {
+/*.benefits__item:not(:last-child) {
   margin-right: 30px;
-}
+}*/
 .benefits__title {
   font-weight: 700;
   font-size: 14px;
@@ -260,7 +260,7 @@ p {
 .pictures__item {
   position: relative;
 }
-.pictures__item:not(:last-child) {
+.pictures__item:not(:last-child) { 
   margin-right: 30px;
 }
 .team {
