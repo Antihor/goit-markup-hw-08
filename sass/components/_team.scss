@@ -1,10 +1,20 @@
 .team {
     display: block;
     background-color: #f5f4fa;
+}
+    @media (min-width:768px) and (max-width:1199px) {
+        .team {display: none;}
+        .section__title {display: none;}
+        }
+        @media screen and(min-width:1200px) {
+        .team {
+            display: flex;
+            flex-wrap: nowrap;
+        }
     }
-/*&__card:not(:last-child) {
+.team__card:not(:last-child) {
     margin-right: 30px;
-}*/
+}
 .section__title {
     font-weight: 700;
     font-size: 28px;
@@ -17,7 +27,10 @@
 
 .team__card {
     width: 450px;
-    object-fit: fill;
+    @media screen and(min-width:1200px) {
+        width: 270px;
+    }
+        
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0px 2px rgba(0, 0, 0, 0.2), 0px 1px rgba(0, 0, 0, 0.14),
@@ -43,7 +56,7 @@
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color: red;
+    color: var(--primary-text-color);
 }
 
 .section-pics {

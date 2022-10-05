@@ -21,8 +21,13 @@
 }
 
 .modal {
-    min-width: 528px;
-    min-height: 581px;
+    min-width: 450px;
+    min-height: 609px;
+
+    @media screen and(min-width:1200px) {
+        min-width: 528px;
+        min-height: 581px;
+    }
     position: absolute;
     top: 50%;
     left: 50%;
@@ -212,9 +217,14 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    @media screen and(min-width:768px) {
+            display: block;
+            max-width: 500px;
+        }
     @media screen and(min-width:1200px) {
     display: flex;
-    align-items: flex-end;
+    align-items:flex-end;
+    
     }
   }
 
@@ -225,10 +235,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
-}
+    }
 
 .form-footer-label {
    text-align: center;
+ 
    @media screen and(min-width:1200px) {
         margin-right: 12px;
     }
@@ -236,14 +247,16 @@
 }
 
 .form-footer input {
-    width: 358px;
+    width: 350px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     padding-left: 16px;
-    margin-top: 20px;
-    margin-bottom: 20px;
     background-color: inherit;
+    margin-top: 20px;
+    @media screen and(max-width:1199px) {
+        margin-bottom: 20px;
+    }
 }
 
 .form-footer input::placeholder {

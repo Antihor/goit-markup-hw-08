@@ -1,25 +1,31 @@
 .header {
     min-height: 60px;
-    width: 480px;
+    max-width: 480px;
     padding-top: 10px;
-    padding-left: 15px;
     border-bottom: 1px solid #ececec;
-}
+    @media screen and(min-width:768px) {
+        height: 80px;
+        padding-top: 0;
+    }
+   }
 .logo {
     font-family: var(--secondary-font);
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--accent-color);
     text-decoration: none;
-    
+    margin-left: 0;
 }
 .logo-footer {
     margin: 0;
 }
 .logo-color {
     color: var(--title-text-color);
+    @media screen and(min-width: 768px) {
+        margin-right: 87px;
+    }
 }
 
 .logo-color-foot {
@@ -29,14 +35,21 @@
 .nav {
     display: flex;
     align-items: center;
-}
+    max-height: 80px;
+    @media screen and(min-width:1200px) {
+            width: 1200px;
+        }
+    }
 .navig {
     @media screen and (max-width: 767px) {
         display: none;}
 }
 .nav-list {
     display: flex;
-}
+    @media screen and(min-width:1200px) {
+        margin-right: 290px;
+    }
+    }
 .nav-list .item:not(:last-child) {
     margin-right: 50px;
 }
@@ -82,15 +95,25 @@
 }
 /*contacts*/
 .contacts {
-    display: flex;
     margin-left: auto;
     @media screen and (max-width: 767px) {
-            display: none;
+        display: none;
         }
+    @media screen and (min-width:768px) {
+        display: block;
+        margin-left: 90px;
+        align-items:center;
+        margin-right: 50px;
+       
+    }
+    @media screen and(min-width:1200px) {
+        display: flex;
+      max-height: 80px;
+      margin-right: 0;
+      margin-left: 0;
+    }
 }
-.contacts .item:not(:last-child) {
-    margin-right: 50px;
-}
+
 .contacts-link {
     text-decoration: none;
     font-weight: 500;
@@ -100,10 +123,11 @@
     color: var(--primary-text-color);
     fill: var(--primary-text-color);
     display: flex;
-    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 20px;
     gap: 10px;
     transition: color var(--animation), fill var(--animation);
-}
+  }
 .contacts-link:hover,
 .contacts-link:focus {
     color: var(--accent-color);
@@ -122,6 +146,11 @@
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and(min-width:1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        width: 696px;
+    }
 }
 .hero {
     align-items: center;
@@ -140,6 +169,13 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    @media screen and(min-width:768px) {
+        max-width: 768px;
+    }
+    @media screen and(min-width:1200px) {
+        max-width: 1600px;
+        height: 600px;
+    }
 }
 .btn-hero {
     background-color: var(--accent-color);
