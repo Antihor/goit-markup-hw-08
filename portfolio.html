@@ -20,21 +20,20 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
-        <title>Portfolio</title>
+    <title>Portfolio</title>
   </head>
   <body>
     <!--headline-->
     <header class="header">
       <div class="container nav">
         <a href="" class="logo">Web<span class="logo-color">Studio</span></a>
-        <nav>
+        <nav class="navig">
           <ul class="nav-list">
             <li class="item">
-              <a href="./index.html" class="nav-link">Студія</a>
+              <a href="./index.html" class="nav-link current">Студія</a>
             </li>
             <li class="item">
-              <a href="./portfolio.html" class="nav-link current">Портфоліо</a>
+              <a href="./portfolio.html" class="nav-link">Портфоліо</a>
             </li>
             <li class="item">
               <a href="" class="nav-link">Контакти</a>
@@ -45,31 +44,22 @@
         <ul class="contacts">
           <li class="item">
             <a href="mailto:info@devstudio.com" class="contacts-link">
-              <svg
-                class="cont-icon"
-                width="16"
-                height="12"
-                aria-label="envelope"
-              >
-                <use href="./images/icons1/icons.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
-            >
+              <svg class="cont-icon" width="16" height="12" aria-label="envelope">
+                <use href="./images/icons1/icons.svg#icon-envelope"></use>
+              </svg>info@devstudio.com</a>
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="contacts-link">
-              <svg
-                class="cont-icon"
-                width="10"
-                height="16"
-                aria-label="smartphone"
-              >
-                <use
-                  href="./images/icons1/icons.svg#icon-smartphone"
-                ></use></svg
-              >+38 096 111 11 11</a
-            >
+            <a href="tel:+380961111111" class="contacts-link"> <svg class="cont-icon" width="10" height="16"
+                aria-label="smartphone">
+                <use href="./images/icons1/icons.svg#icon-smartphone"></use>
+              </svg>+38 096 111 11 11</a>
           </li>
         </ul>
+        <button class="menu-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons1/menus.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -103,7 +93,7 @@
                   <img
                     src="./images/proj-img1(1).jpg"
                     alt="laptop"
-                    width="370"
+                    width="450"
                   />
                   <div class="project-overlay">
                     <p class="overlay-text">
@@ -126,7 +116,7 @@
                   <img
                     src="./images/proj-img2(1).jpg"
                     alt="poster"
-                    width="370"
+                    width="450"
                   />
                   <div class="project-overlay">
                     <p class="overlay-text">
@@ -151,7 +141,7 @@
                   <img
                     src="./images/proj-img3(1).jpg"
                     alt="restaurant"
-                    width="370"
+                    width="450"
                   />
                   <div class="project-overlay">
                     <p class="overlay-text">
@@ -174,7 +164,7 @@
                   <img
                     src="./images/proj-img4(1).jpg"
                     alt="headphones"
-                    width="370"
+                    width="450"
                   />
                   <div class="project-overlay">
                     <p class="overlay-text">
@@ -197,7 +187,7 @@
                   <img
                     src="./images/proj-img5(1).jpg"
                     alt="boxes"
-                    width="370"
+                    width="450"
                   />
                   <div class="project-overlay">
                     <p class="overlay-text">
@@ -220,7 +210,7 @@
                   <img
                     src="./images/proj-img6(1).jpg"
                     alt="display"
-                    width="370"
+                    width="450"
                   />
                   <div class="project-overlay">
                     <p class="overlay-text">
@@ -243,7 +233,7 @@
                   <img
                     src="./images/proj-img7(1).jpg"
                     alt="magazine"
-                    width="370"
+                    width="450"
                   />
                   <div class="project-overlay">
                     <p class="overlay-text">
@@ -266,7 +256,7 @@
                   <img
                     src="./images/proj-img8(1).jpg"
                     alt="label"
-                    width="370"
+                    width="450"
                   />
                   <div class="project-overlay">
                     <p class="overlay-text">
@@ -289,7 +279,7 @@
                   <img
                     src="./images/proj-img9(1).jpg"
                     alt="hands"
-                    width="370"
+                    width="450"
                   />
                   <div class="project-overlay">
                     <p class="overlay-text">
@@ -313,27 +303,17 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-data">
-          <a href="" class="logo logo-footer"
-            >Web<span class="logo-color-foot">Studio</span></a
-          >
+          <a href="" class="logo logo-footer">Web<span class="logo-color-foot">Studio</span></a>
           <address class="address">
             <ul>
               <li class="footer-link">
-                <a
-                  href="https://goo.gl/maps/9TufqQXHVESEiAqk8"
-                  class="address-link-top"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+                <a href="https://goo.gl/maps/9TufqQXHVESEiAqk8" class="address-link-top">м. Київ, пр-т Лесі Українки, 26</a>
               </li>
               <li class="footer-link">
-                <a href="mailto:info@devstudio.com" class="address-link"
-                  >info@devstudio.com</a
-                >
+                <a href="mailto:info@devstudio.com" class="address-link">info@devstudio.com</a>
               </li>
               <li>
-                <a href="tel:+380961111111" class="address-link"
-                  >+38 096 111 11 11</a
-                >
+                <a href="tel:+380961111111" class="address-link">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -373,15 +353,8 @@
         </div>
         <form class="form-footer">
           <div class="form-footer-label">
-            <label for="footer-form" class="form-footer-title"
-              >Підпишіться на розсилку</label
-            >
-            <input
-              type="email"
-              id="footer-form"
-              placeholder="E-mail"
-              class="form-footer-input"
-            />
+            <label for="footer-form" class="form-footer-title">Підпишіться на розсилку</label>
+            <input type="email" id="footer-form" placeholder="E-mail" class="form-footer-input">
           </div>
           <button class="footer-btn">
             <span class="footer-btn-txt">Підписатися</span>
@@ -392,5 +365,33 @@
         </form>
       </div>
     </footer>
+        <!--mobile menu-->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40">
+              <use href="./images/icons1/menus.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+        
+          <ul class="mobile-menu list">
+            <li class="menu-link"><a href="" class="link">Студія</a></li>
+            <li class="menu-link"><a href="" class="link">Портфоліо</a></li>
+            <li class="menu-link"><a href="" class="link">Контакти</a></li>
+          </ul>
+          <ul class="menu-list">
+            <li class="menu-cont-up"><a href="" class="link">+38 096 111 11 11</a></li>
+            <li class="menu-cont"><a href="" class="link">info@devstudio.com</a></li>
+          </ul>
+          <ul class="mobile-socials">
+            <li class="mobile-link"><a href="" class="link">Instagram</a></li>
+            <li class="mobile-link"><a href="" class="link">Twitter</a></li>
+            <li class="mobile-link"><a href="" class="link">Facebook</a></li>
+            <li class="mobile-link"><a href="" class="link">LinkedIn</a></li>
+          </ul>
+          <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
+          <script defer src="js/mobile-menu.js"></script>
+        </div>
   </body>
 </html>

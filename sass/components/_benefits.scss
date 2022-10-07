@@ -1,5 +1,6 @@
 .benefits {
     display: block;
+    
     @media screen and (min-width: 768px) {
         display: flex;
         margin-left: auto;
@@ -20,8 +21,7 @@
     @media screen and (min-width: 768px) {
         width: 354px;
         gap: 30px;
-        margin-bottom: 0;   
-    }
+        }
     @media screen and (min-width: 1200px) {
         width: 270px;}
         .benefits__item:not(last-child){
