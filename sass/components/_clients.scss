@@ -2,17 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    width: 450px;
-   
-    @media screen and (min-width:480px) {
-        max-width: 480;
-    }
-    @media screen and (min-width:768px) {
-        width: 738px;
-    }
-    @media screen and (min-width:1200px) {
-        width: 1200px;
-        flex-wrap: nowrap;
+       @media screen and (min-width:1200px) {
+            flex-wrap: nowrap;
     }
 }
 .clients__item {
@@ -36,9 +27,9 @@
     justify-content: center;
     fill: #afb1b8;
     transition: fill var(--animation), border-color var(--animation);
-&__link:hover,
-&__link:focus {
+}
+.clients__link:hover,
+.clients__link:focus {
     border-color: var(--accent-color);
     fill: var(--accent-color);
-}
 }
