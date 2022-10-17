@@ -214,10 +214,7 @@
 }
 
 .form-footer {
-   text-align: center;
-   @media screen and(min-width:768px) {
-    max-width: 450px;
-   }
+    text-align: center;
     @media screen and(min-width:1200px) {
     display: flex;
     align-items:flex-end;
@@ -235,11 +232,11 @@
 
 .form-footer-label {
    text-align: center;
- 
+    width:450px;
    @media screen and(min-width:1200px) {
-        margin-right: 12px;
+    width: 358px;
+    margin-right: 12px;
     }
-    
 }
 
 .form-footer input {

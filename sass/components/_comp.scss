@@ -1,19 +1,14 @@
 .header {
-    
     min-height: 60px;
     padding-top: 10px;
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px solid #ececec;
     @media screen and(min-width:768px) {
-        width: 738px;
         height: 80px;
         padding-top: 0;
     }
-    @media screen and (min-width:1200px) {
-        width: 1170px;
-    }
-   }
+  }
 .logo {
     font-family: var(--secondary-font);
     font-weight: 700;
@@ -33,7 +28,6 @@
 .logo-color {
     color: var(--title-text-color);
 }
-
 .logo-color-foot {
     color: #ffffff;
 }
@@ -41,15 +35,13 @@
 .nav {
     display: flex;
     align-items: center;
-    height: 80px;
-    }
+   }
 .navig {
     @media screen and (max-width: 767px) {
         display: none;}
 }
 .nav-list {
     display: flex;
-  
     }
 .nav-list .item:not(:last-child) {
     margin-right: 50px;
@@ -107,7 +99,6 @@
         }
     @media screen and(min-width:1200px) {
         display: flex;
-        height: 80px;
         gap: 30px;
     }
 }

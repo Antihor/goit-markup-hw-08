@@ -82,6 +82,9 @@ margin-bottom: auto;
     position: absolute;
     top: 10px;
     right: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     &:hover,
     &:focus {
         color: var(--accent-color);
