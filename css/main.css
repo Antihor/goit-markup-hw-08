@@ -366,7 +366,7 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  width: 360px;
+  max-width: 360px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -398,6 +398,7 @@ p {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -482,6 +483,11 @@ p {
 @media screen and (max-width: 1199px) {
   .section--pics {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section--pics {
+    padding-top: 0;
   }
 }
 
@@ -639,6 +645,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
@@ -652,6 +661,7 @@ p {
 
 .clients__item {
   width: 210px;
+  height: 92px;
 }
 @media screen and (min-width: 768px) {
   .clients__item {
@@ -740,10 +750,21 @@ p {
   margin-top: 20px;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .address {
+    text-align: left;
+  }
+}
 
 .footer-data {
   text-align: center;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-data {
+    text-align: left;
+    margin-bottom: 0;
+  }
 }
 
 .footer-link {
@@ -980,8 +1001,6 @@ p {
 }
 
 .modal {
-  width: 450px;
-  height: 609px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -996,6 +1015,15 @@ p {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 95%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 609px;
+    overflow: scroll;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1257,7 +1285,6 @@ p {
 
 .form-footer-label {
   text-align: center;
-  width: 450px;
 }
 @media screen and (min-width: 1200px) {
   .form-footer-label {
@@ -1267,7 +1294,6 @@ p {
 }
 
 .form-footer input {
-  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1278,6 +1304,8 @@ p {
 @media screen and (max-width: 1199px) {
   .form-footer input {
     margin-bottom: 20px;
+    width: 100%;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1454,7 +1482,9 @@ p {
 }
 
 .mobile-link:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid;
 }
 
 .menu-toggle {
@@ -1477,6 +1507,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 15px;
   margin-top: 64px;
-  position: relative;
 }/*# sourceMappingURL=main.css.map */

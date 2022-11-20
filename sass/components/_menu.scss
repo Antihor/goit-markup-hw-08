@@ -76,7 +76,9 @@ margin-bottom: auto;
     color: var(--accent-color);
 }
 .mobile-link:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid;
 }
 .menu-toggle {
     position: absolute;
@@ -95,6 +97,8 @@ margin-bottom: auto;
 }
 .mobile-socials {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
     margin-top: 64px;
-    position: relative;
+    
 }
